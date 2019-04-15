@@ -9,13 +9,33 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 # %%
-def mean_squared_error():
+def mean_squared_error(d,d_hat):
     """
     請完成這個 Function 後往下執行
     """
+    n=0
+    sum=0
+    count=len(d)
+    
+    while n < count:
+      sum=sum+(d[n]-d_hat[n])**2
+      n=n+1
+    return sum/count  
 
+        
+# %%
+def mean_absolute_error(d,d_hat):
+
+    n=0
+    sum=0
+    count=len(d)
+    
+    while n < count:
+      sum=sum+abs(d[n]-d_hat[n])
+      n=n+1
+    return sum/count  
+ 
 
 # %%
 w = 3
