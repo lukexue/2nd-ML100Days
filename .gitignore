@@ -6,6 +6,7 @@
 /backup/
 /conf/
 /.history/
+/.ipynb_checkpoints/
 
 # Compiled source
 *.com
